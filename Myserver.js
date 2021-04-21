@@ -7,10 +7,8 @@ const baseUrl = 'http://' + hostname + ':' + port;
 
 function start(route, handle) {
     function onRequest(req, res) {
-        let sBody = 'Hello, world! <br> I am in the cloud class.'
-
         console.log('Request receive.');
-        pathname = new url.URL(req.url, baseUrl)
+        pathname = new url.URL(req.url, baseUrl).pathname;
         route(pathname, handle, res);
     }
 
