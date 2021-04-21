@@ -1,3 +1,3 @@
 git add --all
-git commit -m "simple of web server running at localhost:8000"
+git commit -m "make server"
 git push -u origin master
