@@ -1,14 +1,14 @@
 function start(res){
-    let sBody = 'Hello, world! <br> I am in the cloud class.'
+    let Body = 'Hello, world! <br> I am in the cloud class.'
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write(sBody);
+    res.write(Body);
     res.end();
 }
 
 function hello(res){
-    let sBody = 'this is hello'
+    let Body = 'this is hello'
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write(sBody);
+    res.write(Body);
     res.end();
 
 }
